@@ -1,0 +1,188 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#app {
+  flex: 1;
+}
+
+/*----- Nav Bar -----*/
+.navbar {
+  background-color: #1d2124 !important;
+  font-family: Indie Flower;
+}
+.navbar .navbar-brand {
+  font-size: 50px;
+}
+.navbar-brand img {
+  height: 70px;
+  border-radius: 999px;
+  padding: 10px;
+}
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.navbar-toggler {
+  outline: none;
+}
+.navbar span {
+  color: white;
+}
+.nav-link i {
+  padding: 5px;
+}
+ul li a {
+  font-family: Balsamiq Sans;
+}
+
+/*----- Template teddy (listTedddies) -----*/
+.teddy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px;
+  box-shadow: 0px 0px 5px 1px gray;
+  border-radius: 5px;
+  margin: 30px;
+  width: auto;
+  height: auto;
+}
+.teddy h2 {
+  padding: 5px;
+  text-shadow: 1px 3px gray;
+  font-family: Balsamiq Sans;
+  text-transform: uppercase;
+}
+.teddy .teddy-image {
+  max-width: 50%;
+  padding: 10px;
+}
+.teddy p {
+  font-family: Balsamiq Sans;
+}
+.teddy button {
+  margin: 5px;
+  font-family: Balsamiq Sans;
+}
+.teddy button,
+select {
+  border-radius: 999px;
+  background-color: black;
+  color: white;
+}
+/*----- Template teddy (listTedddies) -----*/
+
+/*----- Template teddy (findTedddies) -----*/
+form select {
+  font-family: Balsamiq Sans;
+}
+form select option {
+  font-family: Balsamiq Sans;
+}
+/*----- Template teddy (findTedddies) -----*/
+
+/*----- Footer -----*/
+footer {
+  flex-shrink: 0;
+  border-top: 1px dashed #000;
+  width: 100%;
+  background: #f1f1f1;
+  color: #333;
+  flex: 1;
+}
+.contenu-footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  padding: 50px 0 100px;
+}
+.bloc {
+  width: 25%;
+  margin: 0 30px;
+}
+/* Footer contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-medias h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.footer-contact p {
+  padding: 5px 0;
+}
+/* Footer services */
+.liste-services,
+.liste-horaires,
+.liste-media {
+  list-style-type: none;
+}
+.liste-services {
+  padding: unset;
+}
+.liste-services a {
+  text-decoration: none;
+  color: #333;
+}
+.liste-services a:hover {
+  color: rgb(3, 3, 3);
+}
+p {
+  margin: 0 auto;
+}
+/* Footer medias */
+.liste-media img {
+  width: 40px;
+  margin: 10px 10px;
+}
+.liste-media a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1300px) {
+  .contenu-footer {
+    width: 700px;
+    flex-wrap: wrap;
+  }
+  .bloc {
+    width: 40%;
+    margin: 0 0;
+  }
+  .bloc:nth-child(1),
+  .bloc:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contenu-footer {
+    width: 320px;
+  }
+  .bloc {
+    width: 300px;
+    margin: 30px 30px;
+  }
+  .bloc:nth-child(1),
+  .bloc:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .bloc:nth-child(1) {
+    margin-top: 0;
+  }
+}
